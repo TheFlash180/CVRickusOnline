@@ -1,6 +1,4 @@
-* {
-  margin: 0;
-}
+
 
 html, body {
   height: 100%;
@@ -10,9 +8,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
-  font-size: 62.5%;
-  color: white;
-  background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
 }
 
 body {
@@ -204,6 +199,7 @@ footer .footer-contents {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: white;
 }
 
 .slider-wrapper{
@@ -228,13 +224,16 @@ footer .footer-contents {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: white;
 }
+
 .lblSkill{
   color: black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family:"montserrat", sans-serif;
+  font-weight: bold;
+  font-family:"eczar";
   text-decoration: underline;
   margin-top: 1vw;
   margin-bottom: 2vw;
@@ -249,10 +248,11 @@ footer .footer-contents {
 
 .wrapper{
   position: relative;
-  height: 100vh;
-  max-width: 105%;
+  height: 100%;
+  max-width: 100%;
   overflow: hidden;
   background: linear-gradient(90deg,rgba(2,0,.6,1) 0%, rgb(135, 135, 150)35%, rgb(80, 83, 83) 100%);
+  
 }
 
 .wrapper2{
@@ -416,20 +416,21 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 55%;
+  max-height: 50%;
   position: relative;
 }
 
 .Logo{
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 5%;
+  max-height: 5%;
 }
 
 .h1{
   font-family: "eczar";
   font-weight: bolder;
   text-align: center;
+  color: black;
 }
 
 .box div{
