@@ -1,3 +1,4 @@
+console.log("sdsdsd");
 'use strict';
 
 var fs = require('fs');

@@ -591,7 +591,7 @@ body{
   border-radius: 50%;
   text-decoration: none;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
 
 .fa:hover {
@@ -606,7 +606,6 @@ body{
 .fa-instagram {
   background:  linear-gradient(90deg,rgb(33, 17, 252) 0%, rgb(239, 255, 9)35%, rgb(213, 6, 255)100%);
   color: rgb(255, 255, 255);
-  font-size: 4wh;
 }
 
 .fa-whatsapp {
@@ -621,4 +620,9 @@ body{
   position: relative;
   margin-left: 25%;
   margin-right: auto;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
 }

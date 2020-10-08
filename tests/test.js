@@ -33,8 +33,6 @@ describe('Tests about', function() {
   });
 });
 
-'use strict';
-
 var contact = require('../contact.js');
 
 describe('Tests contact', function() {
