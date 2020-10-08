@@ -1,10 +1,9 @@
-console.log("sdjhsjdhjshdjshd");
 
 let https = new XMLHttpRequest();
 
 var city = "krugersdorp";
 https.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=4f15d36ca3825e612d82aa264ca86d9b");
-    https.send();
+https.send();
 
     https.onload = () => {
 
