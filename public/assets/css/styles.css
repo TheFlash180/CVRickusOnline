@@ -599,8 +599,3 @@ body{
   margin-left: 25%;
   margin-right: auto;
 }
-
-.card{
-  display: flex;
-  justify-content: center;
-}
