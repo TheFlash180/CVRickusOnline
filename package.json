@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "aws-sdk": "^2.769.0",
+        "node-fetch": "^2.6.1",
         "semantic-ui-css": "^2.4.1",
         "semantic-ui-react": "^2.0.0"
     }
