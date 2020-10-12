@@ -21,21 +21,5 @@ https.onload = () => {
     }else{
       console.log(`error ${https.status} ${https.statusText}`);
     }
-    
-    pokemon => generateHtml(pokemon);
-    
-    const generateHtml = (data) => {
-    console.log(data);
-    const html = `
-        <div class="name">${data.name}</div>
-        <img src=${data.sprites.front_default}>
-        <div class="details">
-            <span>Height: ${data.height}</span>
-            <span>Weight: ${data.weight}</span>
-        </div>
-    `;
-    const pokemonDiv = document.querySelector('.pokemon');
-    pokemonDiv.innerHTML = html;
-    };
 };
 

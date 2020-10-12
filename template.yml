@@ -40,6 +40,54 @@ Resources:
           Properties:
             Path: /
             Method: get
+   GetHelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
+      Handler: contact.get
+      Runtime: nodejs12.x
+      Role:
+        Fn::GetAtt:
+        - LambdaExecutionRole
+        - Arn
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+    GetHelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
+      Handler: about.get
+      Runtime: nodejs12.x
+      Role:
+        Fn::GetAtt:
+        - LambdaExecutionRole
+        - Arn
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+    GetHelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
+      Handler: projects.get
+      Runtime: nodejs12.x
+      Role:
+        Fn::GetAtt:
+        - LambdaExecutionRole
+        - Arn
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
     Type: AWS::IAM::Role
@@ -54,4 +102,4 @@ Resources:
       Path: /
       ManagedPolicyArns:
         - !Sub 'arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
-      PermissionsBoundary: !Sub 'arn:${AWS::Partition}:iam::${AWS::AccountId}:policy/CodeStar_${ProjectId}_PermissionsBoundary'
+      PermissionsBoundary: !Sub 'arn:aws:apigateway:*::/*'
