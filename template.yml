@@ -28,24 +28,6 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
-      Handler: index.get
-      Runtime: nodejs12.x
-      Role:
-        Fn::GetAtt:
-        - LambdaExecutionRole
-        - Arn
-      Events:
-        GetEvent:
-          Type: Api
-          Properties:
-            Path: /
-            Method: get
-            
-  Resources:
-  GetHelloWorld:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
       Handler: contact.get
       Runtime: nodejs12.x
       Role:
