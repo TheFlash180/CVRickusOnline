@@ -44,15 +44,76 @@
   
   <p>
     <div class="container2">
-    <label style="font-size: 2vw; margin-top: 3vh; color: black">
+    <label style="font-size: 2vw; color: black">
       This website is an example of a project that I have done. I have done a bunch of projects over the years, which most of them include Mobile applications, Windows Form applications and Web applications.
    </label>
    </div>
   </p>
   
-  <div class="pokemon"></div>
+  <div class="container2" style="background-color:black;">
+    <p>
+      <label style="text-decoration: underline">Pokemon API: </label>
+    </p>
+    <label id="pok" style="text-transform: uppercase;"></label>
+    <p>
+      <img id="pokimage" style="width: 20%; height: 20%;"></img>
+    </p>
+    
+    <p>
+      <label>Weight: </label>
+      <label id="weight"></label>
+      <label>; Height: </label>
+      <label id="height"></label>
+    </p>
+  </div>
   
-  
-  <script type="text/javascript" src="./assets/js/app2.js"></script>
+  <section>
+  <div class="container2" style="background-color:black;">
+    <p>
+      <label style="text-decoration: underline">Weather API: </label>
+    </p>
+    <label id="city" style="text-transform: uppercase;"></label>
+    <p  style="margin-top: 2vw">
+      <label>Clouds(%): </label>
+      <label id="icon" style="width: 20%; height: 20%;"></label>
+    </p>
+    
+    <p style="margin-top: 2vw; position:relative">
+      <label>Wind: </label>
+      <label id="wind"></label>
+      <label>; Temp: </label>
+      <label id="temp"></label>
+    </p>
+  </div>
+</section>
+
+<section style="margin-top: 2vw; position: relative">
+  <div class="container2" style="background-color:black;">
+    <p  style="margin-top: 2vw; position:relative">
+      <label style="position:relative; text-decoration:underline">GitHub API:</label>
+    </p>
+    <p>
+      <label id="name" style="text-transform: uppercase; position:relative"></label>
+    </p>
+    <p style="margin-top: 1vw; position:relative">
+      <label style="position:relative">Date created: </label>
+      <label id="date"></label>
+    </p>
+    <p  style="margin-top: 1vw; position:relative">
+      <label style="position:relative">Repos:</label>
+      <label id="repos"></label>
+    </p>
+    <p>
+      <img id="proimg" style="width: 20%; height: 20%;"></img>
+    </p>
+    
+    
+    
+  </div>
+</section>
+
+<script type="text/javascript" src="./assets/js/app2.js"></script>
+<script src="assets/js/set-background.js"></script>
+
   </body>
   </html>
